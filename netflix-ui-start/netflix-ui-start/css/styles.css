@@ -5,6 +5,11 @@
     
     h4 {
         font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    #footer {
+        padding: 100px;
     }
     
     #footer a {
