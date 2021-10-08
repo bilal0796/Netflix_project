@@ -10,6 +10,7 @@ body {
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
+    background-color: rgb(20, 20, 20)
   }
   nav{
     background-color: rgb(20, 20, 20)
