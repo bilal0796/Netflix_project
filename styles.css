@@ -1,7 +1,18 @@
 body {
-    background-color: rgb(219, 226, 226);
-    background-attachment: fixed;
-    color: black;
+    background: #141414;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    /* background-repeat-x: initial;
+    background-repeat-y: initial; */
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(20, 20, 20)
+  }
+  nav{
+    background-color: rgb(20, 20, 20)
   }
 section {
     min-height: 93vh;
