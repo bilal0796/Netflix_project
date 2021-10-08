@@ -10,13 +10,13 @@
     <!-- Bootstrap CSS -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="styles.css">
     <link href="netflix-ui-start/netflix-ui-start/css/styles.css" rel="stylesheet">
     <title>Netflix</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark  style='background-color: rgb(20, 20, 20)'">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">
             <a class="navbar-brand" href="#">
                 <img src="Netflix_Logo_RGB.png" alt="" width="120">
@@ -50,12 +50,7 @@
                     <a class="dropdown-item" href="#">Something else here</a>
                 </div>
                 </li>
-                <!-- <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li> -->
             </ul>
-
-
             <div class="dropdown">
                 <img src="lens.svg" width="22" class="mr-2" />
                 <button class="btn dropdown-toggle text-white" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -67,19 +62,38 @@
                         </p>
                     </div>
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <button class="dropdown-item" type="button">Action</button>
-                    <button class="dropdown-item" type="button">Another action</button>
-                    <button class="dropdown-item" type="button">Something else here</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2" style="background-color: rgb(20, 20, 20); color: rgb(20, 20, 20);">
+                    <button class="dropdown-item " style="color: whitesmoke;" type="button">Profile</button>
+                    <button class="dropdown-item" style="color: whitesmoke;" type="button">Settings</button>
+                    <button class="dropdown-item" style="color: whitesmoke;" type="button">Log out</button>
                 </div>
 
             </div>
         </div>
     </nav>
-    <div class="d-flex">
-        <div class="p-2">Flex item</div>
-        <div class="p-2">Flex item</div>
-        <div class="ml-auto p-2">Flex item</div>
+    <div class="d-flex" style="color: whitesmoke; padding-top: 20px; padding-left: 10px;">
+        <div class="p-2"><h2>TV Shows</h2></div>
+        <div class="p-2" >
+            <div class="dropdown" style="color: whitesmoke;" >
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: rgb(20, 20, 20);">
+                  Genres
+                </button>
+                <div class="dropdown-menu" style="background-color: rgb(20, 20, 20); color: white;" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+        </div>
+        <div class="ml-auto p-2">
+            <div class="d-flex flex-nowrap">
+                <div class="order-3 p-2" style="border-style:solid; border-width:thin; width: 50px; height: 35px;">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="th-large" class="svg-inline--fa fa-th-large fa-w-16" style=" width: 18px; height:20px; padding-right: 4px; " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M296 32h192c13.255 0 24 10.745 24 24v160c0 13.255-10.745 24-24 24H296c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24zm-80 0H24C10.745 32 0 42.745 0 56v160c0 13.255 10.745 24 24 24h192c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24zM0 296v160c0 13.255 10.745 24 24 24h192c13.255 0 24-10.745 24-24V296c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm296 184h192c13.255 0 24-10.745 24-24V296c0-13.255-10.745-24-24-24H296c-13.255 0-24 10.745-24 24v160c0 13.255 10.745 24 24 24z"></path></svg>
+                </div>
+                <div class="order-2 p-2" style="border-style:solid; border-width:thin; width: 50px; height: 35px;">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="th-large" class="svg-inline--fa fa-th-large fa-w-16" style=" width: 18px; height:20px; padding-right: 4px;" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M296 32h192c13.255 0 24 10.745 24 24v160c0 13.255-10.745 24-24 24H296c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24zm-80 0H24C10.745 32 0 42.745 0 56v160c0 13.255 10.745 24 24 24h192c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24zM0 296v160c0 13.255 10.745 24 24 24h192c13.255 0 24-10.745 24-24V296c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm296 184h192c13.255 0 24-10.745 24-24V296c0-13.255-10.745-24-24-24H296c-13.255 0-24 10.745-24 24v160c0 13.255 10.745 24 24 24z"></path></svg></div>
+            </div>
+        </div>
     </div>
     <div class="container-fluid mt-4 ml-3">
         <div class="mb-2">
@@ -219,6 +233,50 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
         <script src="js/script.js"></script>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+                <script src="js/script.js"></script>
+                <script src="https://kit.fontawesome.com/0ff23863bb.js" crossorigin="anonymous"></script>
+                <div id="footer" class="container" style="padding-top: 200px;">
+    <div class="row">
+        <div class="col-8 offset-md-2 mb-3">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 offset-md-2">
+          <a class="d-block mb-3">Audio and Subtitles</a>
+          <a class="d-block mb-3">Media Center</a>
+          <a class="d-block mb-3">Privacy</a>
+          <a class="d-block mb-3">Contact Us</a>
+
+          <button id="button-servic" type="button" class="btn btn-outline-light mt-3 mb-3">Service Code</button>
+      </div>
+      <div class="col-md-2">
+          <a class="d-block mb-3">Audio Description</a>
+          <a class="d-block mb-3">Investor Relations</a>
+          <a class="d-block">Legal Notices</a>
+      </div>
+      <div class="col-md-2">
+          <a class="d-block mb-3">Help Center</a>
+          <a class="d-block mb-3">Jobs</a>
+          <a class="d-block">Cookie Preferences</a>
+      </div>
+      <div class="col-md-2">
+          <a class="d-block mb-3">Gift Cards</a>
+          <a class="d-block mb-3">Terms of Use</a>
+          <a class="d-block">Corporate Information</a>
+      </div>
+    </div>
+    <div class="row">
+      <div id="last-line" class="col-8 offset-md-2">
+          1997-2019 Netflix, INC. {i-0d00fcda2fdf9c0de}
+      </div>
+  </div>
+</div>
 </body>
 
 </html>
