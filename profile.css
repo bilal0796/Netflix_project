@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 body {
     /* background: #141414; */
     background-color: rgb(20, 20, 20);
@@ -16,3 +17,23 @@ body {
     flex-direction: column;
     justify-content: center;
   }
+=======
+    body {
+        background-color: #1a1919;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    h2 {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #user-name-input {
+        width: fit-content;
+        background-color: #3a3838;
+    }
+    
+    #language {
+        color: #4d4747;
+    }
+>>>>>>> Stashed changes
